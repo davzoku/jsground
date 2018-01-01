@@ -56,6 +56,12 @@ npm start
 ```
 *Read [create-react-app's README for more details](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc)*
 
+Install routing
+
+```
+npm install react-router-dom --save
+```
+
 ### Stateful vs Stateless Components
 > A react state-full component usually has the class syntax and extends the react component base class. This gives you access to the react life cycle methods such as render, componentDidMount, etc.
 
