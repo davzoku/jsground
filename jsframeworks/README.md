@@ -2,6 +2,13 @@
 
 Referenced from [React vs Angular vs Vue Udemy course](https://www.udemy.com/react-vs-angular-vs-vuejs-by-example/learn/v4/overview)
 
+This folder covers simple setup to get started on popular JS frameworks.
+
+Using frameworks, we will create a landing page + FAQ page using:
++ [Bulma CSS Framework](https://bulma.io/)
++ SASS Preprocessor
+
+
 ## React
 Create a new project; react-app
 
@@ -11,6 +18,48 @@ create-react-app react-app
 cd react-app
 npm start
 ```
+
+To setup Bulma
+```
+npm install bulma --save
+```
+
+To setup sass is less straightforward in React
+
+Change the following in `package.json`
+
+```
+   "scripts": {
+     "start": "react-scripts start",
+     "build": "react-scripts build",
+     "test": "react-scripts test --env=jsdom",
+```
+to :
+
+```
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "react-scripts test --env=jsdom",
+```
+
+Then run npm
+
+```
+npm install --save node-sass-chokidar
+npm install --save npm-run-all
+npm start
+```
+*Read [create-react-app's README for more details](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc)*
+
+### Stateful vs Stateless Components
+> A react state-full component usually has the class syntax and extends the react component base class. This gives you access to the react life cycle methods such as render, componentDidMount, etc.
+
+>On the other hand, a stateless functional component, is nothing more than a function which returns jsx. You are not in the react life cycle and have no access to the component base class methods.
 
 ## Angular
 Create a new project; angular-app
