@@ -8,6 +8,7 @@ Create a new project; react-app
 ```
 npm install -g create-react-app
 create-react-app react-app
+cd react-app
 npm start
 ```
 
@@ -31,3 +32,30 @@ cd vue-app
 npm install
 npm start
 ```
+
+Install Bulma CSS Framework as dependency
+
+```
+npm install bulma --save
+```
+
+Install sass as development dependency
+
+```
+npm install node-sass sass-loader style-loader --save-dev
+```
+
++ Uses Bulma's new navbar instead of the deprecated nav. 
+
+## Ember
+Create a new project; ember-app
+
+```
+npm install -g ember-cli
+ember new ember-app
+cd ember-app
+sudo ember serve
+```
+
+* note: admin rights required for ember serve in windows. 
+To use sudo in powershell/cmd, use [scoop](https://github.com/lukesampson/scoop) *
