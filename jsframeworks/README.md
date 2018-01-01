@@ -1,6 +1,6 @@
 # Getting Started with .js Frameworks
 
-From [React vs Angular vs Vue Udemy course](https://www.udemy.com/react-vs-angular-vs-vuejs-by-example/learn/v4/overview)
+Referenced from [React vs Angular vs Vue Udemy course](https://www.udemy.com/react-vs-angular-vs-vuejs-by-example/learn/v4/overview)
 
 ## React
 Create a new project; react-app
@@ -46,6 +46,12 @@ npm install node-sass sass-loader style-loader --save-dev
 ```
 
 + Uses Bulma's new navbar instead of the deprecated nav. 
+
+Use axios to pull mock FAQs
+
+```
+npm install axios --save
+```
 
 ## Ember
 Create a new project; ember-app
