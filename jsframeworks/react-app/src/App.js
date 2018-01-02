@@ -9,7 +9,7 @@ import { Route } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      {/* use className cos JSX */}
+      // use className cos JSX
       <div className="App">
         <Header />
         {/* manually set up routing :(, commenting in jsx is a chore */}

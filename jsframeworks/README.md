@@ -67,6 +67,13 @@ npm install react-router-dom --save
 
 >On the other hand, a stateless functional component, is nothing more than a function which returns jsx. You are not in the react life cycle and have no access to the component base class methods.
 
+### [--save vs --save-dev](https://stackoverflow.com/questions/22891211/what-is-the-difference-between-save-and-save-dev)
+
++ `--save` is used to save the package required for the application to run.  It will be installed together with the package whenever someone runs `npm install` package.
+
++ `--save-dev` is used to save the package for development purpose. Example: unit tests, minification.  It won't be installed when someone installs your package. It's typically only installed if someone clones your source repository and runs `npm install` in it.
+
+
 ## Angular
 Create a new project; angular-app
 
@@ -120,3 +127,32 @@ sudo ember serve
 
 * note: admin rights required for ember serve in windows. 
 To use sudo in powershell/cmd, use [scoop](https://github.com/lukesampson/scoop) *
+
+## Meteor with Blaze
+Create a new project; meteor-blaze-app
+
+```
+choco install meteor
+meteor create meteor-blaze-app
+cd meteor-blaze-app
+meteor
+```
+
+## Aurelia
+
+Create a new project; aurelia-app
+
+```
+npm install -g aurelia-cli
+au new aurelia-app
+```
+
+Choose setup config; Enter `1` for default ESNext
+
+To start app; `--watch` flag to refresh upon new changes.
+
+```
+au run --watch
+```
+
+
