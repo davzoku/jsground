@@ -8,6 +8,13 @@ Using frameworks, we will create a landing page + FAQ page using:
 + [Bulma CSS Framework](https://bulma.io/)
 + SASS Preprocessor
 
+## Basics File Structure
+
+```
+package.json          # a control file for installing NPM packages
+package-lock.json     # Describes the NPM dependency tree
+.gitignore            # a control file for git
+```
 
 ## React
 Create a new project; react-app
@@ -80,8 +87,19 @@ Create a new project; angular-app
 ```
 npm install -g @angular/cli
 ng new angular-app --routing --style=sass
-npm start
+ng serve
 ```
+
+Create component; home, faq
+
+```
+ng g c home
+ng g c faq
+```
+
+`g` shorthand for generate
+
+`c` shorthand for component
 
 ## Vue
 Create a new project; vue-app
