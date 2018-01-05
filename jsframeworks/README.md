@@ -1,14 +1,23 @@
 # Getting Started with .js Frameworks
 
-Referenced from [React vs Angular vs Vue Udemy course](https://www.udemy.com/react-vs-angular-vs-vuejs-by-example/learn/v4/overview)
+*README.md for jsframeworks folder*
 
 This folder covers simple setup to get started on popular JS frameworks.
 
-Using frameworks, we will create a landing page + FAQ page using:
-+ [Bulma CSS Framework](https://bulma.io/)
-+ SASS Preprocessor
+# Contents
 
-## Basics File Structure
++ [Basic File Structure](#basic-file-structure)
++ [express-pug-app](#express-pug-app)
++ React vs Angular vs Vue
+    - [react-app](#react)
+    - [angular-app](#angular)
+    - [vue-app](#vue)
++ Exploration in Progess
+    - [ember-app](#ember)
+    - [meteor-blaze-app](meteor-with-blaze)
+
+
+## Basic File Structure
 
 ```
 package.json          # a control file for installing NPM packages
@@ -16,20 +25,48 @@ package-lock.json     # Describes the NPM dependency tree
 .gitignore            # a control file for git
 ```
 
-## Express + Pug
+## express-pug-app
 __Pug is a view engine/ template engine__
 
-Create a new project; express-app
+*express-pug-app is meant for testing Express + Pug*
+*Referenced from [Academind's youtube tutorials](https://www.youtube.com/playlist?list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR)*
+
+Create a new project; express-pug-app
 
 ```
 npm install -g express-generator
-express express-app
-cd express-app
+express express-pug-app
+cd express-pug-app
 npm install 
 npm start
 ```
 
 Start at `http://localhost:3000/` by default.
+
+## express-hbs-app + validation
+To create new app with handlebars view engine and install dependencies
+
+```
+express --v hbs express-app-name && npm install
+```
+
+`{{ title }}` renders the variable `title` as text
+
+`{{{ body }}}` renders `body` as html
+
+```
+npm install --save express-validator
+npm install --save express-session
+```
+
+## React vs Angular vs Vue
+
+This section takes references from [Gary Simon's React vs Angular vs Vue Udemy course](https://www.udemy.com/react-vs-angular-vs-vuejs-by-example/learn/v4/overview)
+
+The objective is to create a common landing page + FAQ page across these 3 popular frameworks using:
++ [Bulma CSS Framework](https://bulma.io/)
++ SASS Preprocessor
+
 
 ## React
 Create a new project; react-app
