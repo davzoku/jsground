@@ -16,6 +16,19 @@ package-lock.json     # Describes the NPM dependency tree
 .gitignore            # a control file for git
 ```
 
+## Express
+Create a new project; express-app
+
+```
+npm install -g express-generator
+express express-app
+cd express-app
+npm install 
+npm start
+```
+
+Start at `http://localhost:3000/` by default.
+
 ## React
 Create a new project; react-app
 
