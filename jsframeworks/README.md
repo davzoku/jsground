@@ -16,7 +16,9 @@ package-lock.json     # Describes the NPM dependency tree
 .gitignore            # a control file for git
 ```
 
-## Express
+## Express + Pug
+__Pug is a view engine/ template engine__
+
 Create a new project; express-app
 
 ```

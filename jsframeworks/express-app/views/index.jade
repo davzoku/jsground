@@ -1,5 +1,20 @@
 extends layout
+// based on layout.jade and include(extends) below content
 
 block content
   h1= title
+  p above is a variable
+  // h1= injects a title variable
+  h1 title
+  p above is a text
   p Welcome to #{title}
+  //to inject variable inside normal text using #{}
+  a(href='/users') Users
+  | .
+  a(href='/test/5') GET with ID 5
+  | .
+  a(href='/FAQ') FAQ
+  ||
+  form(method='POST' action='/test/submit')
+    input.form-control(type='text', name='id')
+    button(type='submit') Submit
