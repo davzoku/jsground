@@ -8,7 +8,7 @@ This folder covers simple setup to get started on popular JS frameworks.
 
 + [Basic File Structure](#basic-file-structure)
 + [express-pug-app + GET, POST](#express-pug-app--get-post)
-+ [express-hbs-app](#express-hbs-app--validation--mongodb--mongoose)
++ [express-hbs-app + validation + Mongodb + Mongoose](#express-hbs-app--validation--mongodb--mongoose)
     - [Mongodb native driver vs Mongoose](#mongodb-native-driver-vs-mongoose)
 + React vs Angular vs Vue
     - [react-app](#react)
