@@ -7,7 +7,9 @@ This folder covers simple setup to get started on popular JS frameworks.
 # Contents
 
 + [Basic File Structure](#basic-file-structure)
-+ [express-pug-app](#express-pug-app)
++ [express-pug-app + GET, POST](#express-pug-app-get-post)
++ [express-hbs-app](express-hbs-app-validation-mongodb-mongoose)
+    - [Mongodb native driver vs Mongoose](#mongodb-native-driver-vs-mongoose)
 + React vs Angular vs Vue
     - [react-app](#react)
     - [angular-app](#angular)
@@ -25,11 +27,10 @@ package-lock.json     # Describes the NPM dependency tree
 .gitignore            # a control file for git
 ```
 
-## express-pug-app
+## express-pug-app + GET, POST
 __Pug is a view engine/ template engine__
 
-*express-pug-app is meant for testing Express + Pug*
-*Referenced from [Academind's youtube tutorials](https://www.youtube.com/playlist?list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR)*
+*Referenced from [Academind's youtube tutorials](https://www.youtube.com/playlist?list=PL55RiY5tL51oGJorjEgl6NVeDbx_fO5jR), this app performs simple GET and POST*
 
 Create a new project; express-pug-app
 
@@ -43,21 +44,48 @@ npm start
 
 Start at `http://localhost:3000/` by default.
 
-## express-hbs-app + validation
-To create new app with handlebars view engine and install dependencies
+## express-hbs-app + validation + Mongodb + Mongoose
+To create new app with handlebars view engine by default and install dependencies
 
 ```
 express --v hbs express-app-name && npm install
 ```
+How handlebars work: 
 
-`{{ title }}` renders the variable `title` as text
++ Double curly braces, `{{ title }}` renders the variable `title` as text
 
-`{{{ body }}}` renders `body` as html
++ Triple curly braces `{{{ body }}}` renders `body` as html
 
+Install required modules for validator and session:
 ```
 npm install --save express-validator
 npm install --save express-session
 ```
+
+Install required modules for Mongodb:
+```
+npm install --save mongodb
+```
+
+Refer to [101-notes/getting-started-mongodb-windows.md](https://github.com/davzoku/101-notes/blob/master/getting-started-mongodb-windows.md)  to set up Mongodb on Windows 10
+
+Install Mongoose:
+
+```
+npm install --save mongoose
+```
+
+### Mongodb native driver vs  Mongoose
+
+*MongoDB native driver uses **Object Relational Mapping (ORM)** and Mongoose uses **Object Document Mapping (ODM)**.*
+
+Basically, Mongoose adds a layer of abstraction over pure mongo which includes Schemas and Models.
+
+express-hbs-app runs with Mongoose; so to compare syntax differences for basic CRUD functions in the `index.js` , refer to:
+
++ using [native Mongodb driver](https://github.com/mschwarzmueller/nodejs-basics-tutorial/blob/master/09-mongodb/routes/index.js)
+
++ using [Monk](https://github.com/mschwarzmueller/nodejs-basics-tutorial/blob/master/10-monk/routes/index.js); another alternative
 
 ## React vs Angular vs Vue
 
@@ -209,6 +237,8 @@ meteor
 ```
 
 ## Aurelia
+
+__not functional at the moment__
 
 Create a new project; aurelia-app
 
