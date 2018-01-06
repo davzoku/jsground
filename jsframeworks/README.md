@@ -7,16 +7,16 @@ This folder covers simple setup to get started on popular JS frameworks.
 # Contents
 
 + [Basic File Structure](#basic-file-structure)
-+ [express-pug-app + GET, POST](#express-pug-app-get-post)
-+ [express-hbs-app](express-hbs-app-validation-mongodb-mongoose)
++ [express-pug-app + GET, POST](#express-pug-app--get-post)
++ [express-hbs-app](#express-hbs-app--validation--mongodb--mongoose)
     - [Mongodb native driver vs Mongoose](#mongodb-native-driver-vs-mongoose)
 + React vs Angular vs Vue
     - [react-app](#react)
     - [angular-app](#angular)
     - [vue-app](#vue)
-+ Exploration in Progess
++ Exploration in Progress
     - [ember-app](#ember)
-    - [meteor-blaze-app](meteor-with-blaze)
+    - [meteor-blaze-app](#meteor-with-blaze)
 
 
 ## Basic File Structure
@@ -75,7 +75,7 @@ Install Mongoose:
 npm install --save mongoose
 ```
 
-### Mongodb native driver vs  Mongoose
+### Mongodb native driver vs Mongoose
 
 *MongoDB native driver uses **Object Relational Mapping (ORM)** and Mongoose uses **Object Document Mapping (ODM)**.*
 
